@@ -13,6 +13,7 @@
 		8F50DD1F237157B7008B153B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DD1D237157B7008B153B /* Main.storyboard */; };
 		8F50DD21237157B8008B153B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DD20237157B8008B153B /* Assets.xcassets */; };
 		8F50DD24237157B8008B153B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DD22237157B8008B153B /* LaunchScreen.storyboard */; };
+		8F50DD2C23715C31008B153B /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F50DD2B23715C31008B153B /* Content.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8F50DD20237157B8008B153B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F50DD23237157B8008B153B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F50DD25237157B8008B153B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F50DD2B23715C31008B153B /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8F50DD19237157B7008B153B /* SceneDelegate.swift */,
 				8F50DD1B237157B7008B153B /* ViewController.swift */,
 				8F50DD1D237157B7008B153B /* Main.storyboard */,
+				8F50DD2B23715C31008B153B /* Content.storyboard */,
 				8F50DD20237157B8008B153B /* Assets.xcassets */,
 				8F50DD22237157B8008B153B /* LaunchScreen.storyboard */,
 				8F50DD25237157B8008B153B /* Info.plist */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F50DD2C23715C31008B153B /* Content.storyboard in Resources */,
 				8F50DD24237157B8008B153B /* LaunchScreen.storyboard in Resources */,
 				8F50DD21237157B8008B153B /* Assets.xcassets in Resources */,
 				8F50DD1F237157B7008B153B /* Main.storyboard in Resources */,
