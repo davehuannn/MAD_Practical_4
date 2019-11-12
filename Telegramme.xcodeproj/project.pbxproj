@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F2594ED237A7575000299DA /* ShowContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2594EC237A7575000299DA /* ShowContactViewController.swift */; };
 		8F50DD18237157B7008B153B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DD17237157B7008B153B /* AppDelegate.swift */; };
 		8F50DD1A237157B7008B153B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DD19237157B7008B153B /* SceneDelegate.swift */; };
 		8F50DD1C237157B7008B153B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50DD1B237157B7008B153B /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F2594EC237A7575000299DA /* ShowContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContactViewController.swift; sourceTree = "<group>"; };
 		8F50DD14237157B7008B153B /* Telegramme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegramme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50DD17237157B7008B153B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F50DD19237157B7008B153B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				8F50DD1B237157B7008B153B /* ViewController.swift */,
 				8F50DD1D237157B7008B153B /* Main.storyboard */,
 				8F50DD2B23715C31008B153B /* Content.storyboard */,
+				8F2594EC237A7575000299DA /* ShowContactViewController.swift */,
 				8F7D5FBE2373E387001ED916 /* AddContactViewController.swift */,
 				8F50DD20237157B8008B153B /* Assets.xcassets */,
 				8F50DD22237157B8008B153B /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				8F7D5FBF2373E387001ED916 /* AddContactViewController.swift in Sources */,
 				8F7D5FC12373EF10001ED916 /* Contact.swift in Sources */,
 				8F50DD18237157B7008B153B /* AppDelegate.swift in Sources */,
+				8F2594ED237A7575000299DA /* ShowContactViewController.swift in Sources */,
 				8F50DD1A237157B7008B153B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
