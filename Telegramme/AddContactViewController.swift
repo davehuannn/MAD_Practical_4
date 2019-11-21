@@ -31,8 +31,15 @@ class AddContactViewController : UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         print(String(appDelegate.contactList.count))
         
+        let newContact = Contact(firstname: firstNameFld.text!, lastname: lastNameFld.text!, mobileno: mobileFld.text!)
+        
         appDelegate.contactList.append(Contact(firstname: firstNameFld.text!, lastname: lastNameFld.text!, mobileno: mobileFld.text!))
         print(appDelegate.contactList.last!.firstName)
+        
+        let controller = ContactController()
+        //var controller:ContactController = ContactController()
+        controller.AddContact(newContact: newContact)
+
         firstNameFld.text = ""
         lastNameFld.text = ""
         mobileFld.text = ""
