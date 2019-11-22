@@ -1,5 +1,5 @@
 import Foundation
-
+import CoreData
 import UIKit
 
 class ShowContactViewController :  UITableViewController {
@@ -26,12 +26,40 @@ class ShowContactViewController :  UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var firstName: String
+        var lastName: String
+        var mobileNo: String
+        
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
         
-        let contact = appDelegate.contactList[indexPath.row]
-        cell.textLabel!.text = "\(contact.firstName) \(contact.lastName)"
-        cell.detailTextLabel!.text = "\(contact.mobileNo)"
+        var contactExisting:[NSManagedObject] = []
+        
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchContacts = NSFetchRequest<NSManagedObject>(entityName: "CDContact")
+        do {
+            contactExisting = try! context.fetch(fetchContacts)
+            
+            for contact in contactExisting {
+                firstName = contact.value(forKeyPath: "firstname") as! String
+                lastName = contact.value(forKeyPath: "lastname") as! String
+                mobileNo = contact.value(forKeyPath: "mobileno") as! String
+                
+                cell.textLabel!.text = "\(firstName) \(lastName)"
+                cell.detailTextLabel!.text = "\(mobileNo)"
+            }
+        } catch let error as NSError {
+            print("Could not fetch")
+        }
+        
         return cell
+        
+//        let cell = self.tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
+//
+//        let contact = appDelegate.contactList[indexPath.row]
+//        cell.textLabel!.text = "\(contact.firstName) \(contact.lastName)"
+//        cell.detailTextLabel!.text = "\(contact.mobileNo)"
+        
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
